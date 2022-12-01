@@ -47,29 +47,4 @@ class ImdbSpider(scrapy.Spider):
         
         print('PELICULA:', response.meta.get('puesto'), response.meta.get('titulo'),"\n", "NUMERO RESEÑAS DE USUARIOS Y CRÍTICOS:", resenas, "\n", "DIRECTOR(ES):", directores, "\n", "ESCRITOR(ES):", escritores, "\n", "ACTORES:", actores)
 
-            
-
-
-
-
-
-
-
-        # for movie in movies:
-            # title = movie.css('a::text').get()
-            # 1º conseguir el enlace (opcion1)
-            # href = movie.css('a::attr(href)').extract()
-            # link = 'https://www.imdb.com' + href[0]
-            # 1º conseguir el enlace (opcion2)
-            # href2 = movie.css('a::attr(href)').get()
-            # link2 = 'https://www.imdb.com' + href2
-            # # 2º español
-            # print('MOVIE', title, link2)
-            # break
-        
-        
-            # yield {
-            #     'GENERO': genero,
-            #     'PUESTO': puesto,
-            #     'TITULO': titulo
-            # }
+           
